@@ -9,7 +9,7 @@ const forumRoutes = require('./routes/forum')
 const app = express()
 
 //middlewares
-app.use(express.json())
+app.use(express.json({ express: false}))
 app.use(cors())
 
 //routes
